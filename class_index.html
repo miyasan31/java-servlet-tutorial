@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@0.26.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>クラス名簿情報</title>
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center gap-4 h-screen w-full bg-gray-100"
+    >
+      <div class="card shadow-lg p-10 bg-white w-1/4">
+        <div class="flex gap-2 justify-center items-center flex-col">
+          <div class="text-xl font-bold text-gray-700 text-center">
+            クラス名簿情報
+          </div>
+          <a href="class_select.html">
+            <button class="btn btn-primary btn-wide">検索</button>
+          </a>
+          <a href="class_insert.html">
+            <button class="btn btn-secondary btn-wide">登録</button>
+          </a>
+          <a href="class_update.html">
+            <button class="btn btn-accent btn-wide">更新</button>
+          </a>
+          <a href="class_delete.html">
+            <button class="btn btn-wide">削除</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="card shadow-lg p-10 bg-white w-1/4">
+        <div class="flex gap-2 justify-center items-center flex-col">
+          <div class="text-xl font-bold text-gray-700 text-center">
+            学籍番号情報
+          </div>
+          <a href="gakuseki_select.html">
+            <button class="btn btn-primary btn-wide">検索</button>
+          </a>
+          <a href="class_insert.html">
+            <button class="btn btn-secondary btn-wide">登録</button>
+          </a>
+          <a href="class_update.html">
+            <button class="btn btn-accent btn-wide">更新</button>
+          </a>
+          <a href="class_delete.html">
+            <button class="btn btn-wide">削除</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

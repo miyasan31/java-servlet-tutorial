@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@0.26.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>クラス名簿 - 削除</title>
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center gap-6 h-screen w-full bg-gray-100"
+    >
+      <div class="card shadow-lg p-10 bg-white w-1/4">
+        <div class="text-xl font-bold text-gray-700 text-center">
+          クラス名簿 - 一件削除
+        </div>
+        <form action="./servlet/class_delete" method="POST">
+          <label class="cursor-pointer label">
+            <span class="label-text">削除対象クラス</span>
+          </label>
+          <select
+            name="CLASS_NO"
+            class="select select-bordered select-primary w-full"
+          >
+            <option value="AT11A192" selected>AT11A192</option>
+            <option value="AT11B203">AT11B203</option>
+            <option value="CG11A172">CG11A172</option>
+            <option value="IT11A172">IT11A172</option>
+            <option value="AT12A165">AT12A165</option>
+            <option value="AT12B165">AT12B165</option>
+            <option value="IH12A101">IH12A101</option>
+            <option value="IW12A185">IW12A185</option>
+            <option value="AT13A223">AT13A223</option>
+            <option value="AP13A223">AP13A223</option>
+            <option value="IH13A223">IH13A223</option>
+            <option value="IW13A187">IW13A187</option>
+            <option value="CD13A166">CD13A166</option>
+            <option value="AP14A226">AP14A226</option>
+            <option value="AT14A226">AT14A226</option>
+            <option value="IH14A223">IH14A223</option>
+            <option value="CT14A187">CT14A187</option>
+            <option value="IW14A187">IW14A187</option>
+            <option value="xx14Axx">xx14Axx</option>
+          </select>
+          <div class="flex justify-end gap-2 pt-2">
+            <a href="class_index.html" class="btn btn-outline btn-primary">
+              戻る
+            </a>
+            <button class="btn btn-primary">検索</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card shadow-lg p-10 bg-white w-1/4">
+        <div class="text-xl font-bold text-gray-700 text-center">
+          クラス名簿 - 複数削除
+        </div>
+        <form action="./servlet/class_delete1" method="POST">
+          <label class="cursor-pointer label">
+            <span class="label-text">削除対象クラス</span>
+          </label>
+          <select
+            name="CLASS_NO"
+            class="select select-bordered select-primary w-full"
+          >
+            <option value="AT11A192" selected>AT11A192</option>
+            <option value="AT11B203">AT11B203</option>
+            <option value="CG11A172">CG11A172</option>
+            <option value="IT11A172">IT11A172</option>
+            <option value="AT12A165">AT12A165</option>
+            <option value="AT12B165">AT12B165</option>
+            <option value="IH12A101">IH12A101</option>
+            <option value="IW12A185">IW12A185</option>
+            <option value="AT13A223">AT13A223</option>
+            <option value="AP13A223">AP13A223</option>
+            <option value="IH13A223">IH13A223</option>
+            <option value="IW13A187">IW13A187</option>
+            <option value="CD13A166">CD13A166</option>
+            <option value="AP14A226">AP14A226</option>
+            <option value="AT14A226">AT14A226</option>
+            <option value="IH14A223">IH14A223</option>
+            <option value="CT14A187">CT14A187</option>
+            <option value="IW14A187">IW14A187</option>
+            <option value="xx14Axx">xx14Axx</option>
+          </select>
+          <div class="flex justify-end gap-2 pt-2">
+            <a href="class_index.html" class="btn btn-outline btn-primary">
+              戻る
+            </a>
+            <button class="btn btn-primary">検索</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
