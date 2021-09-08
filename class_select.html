@@ -15,10 +15,11 @@
     />
     <title>クラス名簿 - 検索</title>
   </head>
+
   <body>
     <div class="flex justify-center items-center h-screen w-full bg-gray-100">
       <div class="card shadow-lg p-10 bg-white w-1/4">
-        <div class="text-xl font-bold text-gray-700 text-center">
+        <div class="pb-2 text-xl font-bold text-gray-700 text-center">
           クラス名簿 - 検索
         </div>
 
@@ -59,6 +60,7 @@
               <span>クラス選択</span>
             </label>
           </div>
+
           <select
             name="CLASS_NO"
             class="select select-bordered select-primary w-full"
@@ -84,11 +86,14 @@
             <option value="xx14Axx">xx14Axx</option>
           </select>
 
-          <div class="flex justify-end gap-2 pt-2">
-            <a href="class_index.html" class="btn btn-outline btn-primary"
-              >戻る</a
-            >
-            <button class="btn btn-primary">検索</button>
+          <div class="flex flex-col gap-2 pt-4">
+            <button class="block w-full btn btn-primary">検索</button>
+
+            <a href="class_index.html">
+              <button type="button" class="w-full btn btn-outline btn-primary">
+                戻る
+              </button>
+            </a>
           </div>
         </form>
       </div>

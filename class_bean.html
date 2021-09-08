@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,21 +14,52 @@
       rel="stylesheet"
       type="text/css"
     />
-    <title>クラス名簿 - 更新</title>
+    <title>クラス名簿 - 検索</title>
   </head>
   <body>
-    <div
-      class="flex justify-center items-center gap-6 h-screen w-full bg-gray-100"
-    >
+    <div class="flex justify-center items-center h-screen w-full bg-gray-100">
       <div class="card shadow-lg p-10 bg-white w-1/4">
         <div class="pb-2 text-xl font-bold text-gray-700 text-center">
-          クラス名簿 - 更新
+          クラス名簿 - 検索
         </div>
 
-        <form action="./servlet/class_update_select" method="POST">
-          <label class="cursor-pointer label">
-            <span class="label-text">更新対象クラス</span>
-          </label>
+        <form action="./servlet/class_servlet" method="POST">
+          <div class="flex">
+            <label class="cursor-pointer label">
+              <input
+                type="radio"
+                name="SELECT"
+                checked
+                class="radio radio-primary"
+                value="2"
+              />
+              <span class="radio-mark mr-2"></span>
+              <span>学年検索</span>
+            </label>
+          </div>
+
+          <select
+            name="GAKUNEN"
+            class="select select-bordered select-primary w-full"
+          >
+            <option value="1" selected>1年</option>
+            <option value="2">2年</option>
+            <option value="3">3年</option>
+            <option value="4">4年</option>
+          </select>
+
+          <div class="flex">
+            <label class="cursor-pointer label">
+              <input
+                type="radio"
+                name="SELECT"
+                class="radio radio-primary"
+                value="1"
+              />
+              <span class="radio-mark mr-2"></span>
+              <span>クラス記号検索</span>
+            </label>
+          </div>
 
           <select
             name="CLASS_NO"

@@ -20,13 +20,15 @@
       class="flex justify-center items-center gap-6 h-screen w-full bg-gray-100"
     >
       <div class="card shadow-lg p-10 bg-white w-1/4">
-        <div class="text-xl font-bold text-gray-700 text-center">
+        <div class="pb-2 text-xl font-bold text-gray-700 text-center">
           クラス名簿 - 一件削除
         </div>
+
         <form action="./servlet/class_delete" method="POST">
           <label class="cursor-pointer label">
             <span class="label-text">削除対象クラス</span>
           </label>
+
           <select
             name="CLASS_NO"
             class="select select-bordered select-primary w-full"
@@ -51,11 +53,14 @@
             <option value="IW14A187">IW14A187</option>
             <option value="xx14Axx">xx14Axx</option>
           </select>
-          <div class="flex justify-end gap-2 pt-2">
-            <a href="class_index.html" class="btn btn-outline btn-primary">
-              戻る
+
+          <div class="flex flex-col gap-2 pt-4">
+            <button class="block w-full btn btn-primary">検索</button>
+            <a href="class_index.html">
+              <button type="button" class="w-full btn btn-outline btn-primary">
+                戻る
+              </button>
             </a>
-            <button class="btn btn-primary">検索</button>
           </div>
         </form>
       </div>
@@ -92,11 +97,15 @@
             <option value="IW14A187">IW14A187</option>
             <option value="xx14Axx">xx14Axx</option>
           </select>
-          <div class="flex justify-end gap-2 pt-2">
-            <a href="class_index.html" class="btn btn-outline btn-primary">
-              戻る
+
+          <div class="flex flex-col gap-2 pt-4">
+            <button class="block w-full btn btn-primary">検索</button>
+
+            <a href="class_index.html">
+              <button type="button" class="w-full btn btn-outline btn-primary">
+                戻る
+              </button>
             </a>
-            <button class="btn btn-primary">検索</button>
           </div>
         </form>
       </div>
