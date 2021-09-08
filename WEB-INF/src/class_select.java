@@ -41,14 +41,16 @@ public class class_select extends HttpServlet {
 			sb.append("<body>");
 				sb.append("<div class='h-screen w-full'>");
 					sb.append("<div class='text-2xl text-center bg-primary py-5 font-bold text-white'>名簿検索</div>");
-					sb.append("<div class='px-5'>");
+
+					sb.append("<div class='px-5 w-2/3 mx-auto'>");
 
 						sb.append("<div class='text-secondary text-lg py-3 bg-white'>検索結果 : " + searchStr);
 						if (selectStr.equals("1")) {
 							sb.append("年");
 						}
 						sb.append("</div>");
-						sb.append("<table class='table table-compact w-full px-3 rounded-lg'>");
+
+						sb.append("<table class='table table-compact w-full rounded-lg'>");
 							sb.append("<thead>");
 								sb.append("<tr>");
 									sb.append("<th>");
@@ -135,7 +137,8 @@ public class class_select extends HttpServlet {
 						}
 						sb.append("</table>");
 					sb.append("</div>");
-					sb.append("<div class='flex justify-center pt-5'>");
+
+					sb.append("<div class='flex justify-center pt-5 pb-40'>");
 						sb.append("<a href='/JV27/class_select.html'><button class='btn btn-link'>検索に戻る</button></a>");
 						sb.append("<a href='/JV27/class_index.html'><button class='btn btn-link'>ホームに戻る</button></a>");
 					sb.append("</div>");

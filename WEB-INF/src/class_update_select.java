@@ -37,9 +37,11 @@ public class class_update_select extends HttpServlet {
 			sb.append("<body>");
 				sb.append("<div class='h-screen w-full'>");
 					sb.append("<div class='text-2xl text-center bg-primary py-5 font-bold text-white'>名簿更新</div>");
-					sb.append("<div class='px-5'>");
-						sb.append("<div class='text-secondary text-lg py-3 bg-white'>更新する学生を選択してください</div>");
-						sb.append("<form action='./class_update_userFetch' method='POST'>");
+					sb.append("<form action='./class_update_userFetch' method='POST'>");
+						sb.append("<div class='px-5 w-2/3 mx-auto'>");
+
+							sb.append("<div class='text-secondary text-lg py-3 bg-white'>更新する学生を選択してください</div>");
+
 							sb.append("<table class='table table-compact w-full rounded-lg'>");
 								sb.append("<thead>");
 									sb.append("<tr>");
@@ -119,15 +121,18 @@ public class class_update_select extends HttpServlet {
 											sb.append("</tr>");
 										sb.append("</tbody>");
 									}
+
 							sb.append("</table>");
+
 							sb.append("<div class='flex justify-center pt-5'>");
-								sb.append("<button class='btn btn-primary btn-wide'>確認</button>");
+								sb.append("<button class='btn btn-primary btn-wide'>決定</button>");
+							sb.append("</div>");
+
+							sb.append("<div class='flex justify-center pt-5 pb-40'>");
+								sb.append("<a href='/JV27/class_update.html'><button type='button' class='btn btn-link'>検索に戻る</button></a>");
+								sb.append("<a href='/JV27/class_index.html'><button type='button' class='btn btn-link'>ホームに戻る</button></a>");
 							sb.append("</div>");
 						sb.append("</form>");
-						sb.append("<div class='flex justify-center pt-5'>");
-							sb.append("<a href='/JV27/class_update.html' class='btn btn-link'>検索に戻る</a>");
-							sb.append("<a href='/JV27/class_index.html' class='btn btn-link'>ホームに戻る</a>");
-						sb.append("</div>");
 					sb.append("</div>");
 				sb.append("</div>");
 			sb.append("</body>");
