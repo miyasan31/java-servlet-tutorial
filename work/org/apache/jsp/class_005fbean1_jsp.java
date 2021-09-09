@@ -51,10 +51,12 @@ public final class class_005fbean1_jsp extends org.apache.jasper.runtime.HttpJsp
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write(' ');
       out.write('\r');
       out.write('\n');
  response.setContentType("text/html;charset=UTF-8"); 
+      out.write('\r');
+      out.write('\n');
+ String class_no =	request.getAttribute("class_no").toString(); 
       out.write("\r\n");
       out.write("\r\n");
       out.write("<html>\r\n");
@@ -85,7 +87,9 @@ public final class class_005fbean1_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("      \r\n");
       out.write("      <div class='px-5 w-2/3 mx-auto'>\r\n");
       out.write("\r\n");
-      out.write("        <div class='text-secondary text-lg py-3 bg-white'>検索結果 : </div>\r\n");
+      out.write("        <div class='text-secondary text-lg py-3 bg-white'>検索結果 : ");
+      out.print( class_no );
+      out.write(" </div>\r\n");
       out.write("\r\n");
       out.write("        ");
  if (gakuseki_bean.getHint_flag() == 1) { 
