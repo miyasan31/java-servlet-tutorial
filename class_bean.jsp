@@ -1,6 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" import="java.util.*" %> 
-<% response.setContentType("text/html;charset=UTF-8"); %>
-<% String select =	request.getAttribute("select").toString(); %>
+<% 
+  response.setContentType("text/html;charset=UTF-8");
+  String select =	request.getAttribute("select").toString();
+%>
 
 <html>
   <head>

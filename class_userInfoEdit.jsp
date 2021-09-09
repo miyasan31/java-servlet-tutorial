@@ -1,18 +1,18 @@
 <%@ page contentType="text/html;charset=UTF-8" %> 
 <%
-	response.setContentType("text/html; charset=UTF-8"); %> <% String class_no =
-	request.getAttribute("class_no").toString(); String syusseki_no =
-	request.getAttribute("syusseki_no").toString(); String gakuseki_no =
-	request.getAttribute("gakuseki_no").toString(); String simei_1 =
-	request.getAttribute("simei_1").toString(); String simei_2 =
-	request.getAttribute("simei_2").toString(); String kana_1 =
-	request.getAttribute("kana_1").toString(); String kana_2 =
-	request.getAttribute("kana_2").toString(); String umare =
-	request.getAttribute("umare").toString(); 
-	
+	response.setContentType("text/html; charset=UTF-8");
+	String class_no = request.getAttribute("class_no").toString(); 
+	String syusseki_no = request.getAttribute("syusseki_no").toString();
+	String gakuseki_no = request.getAttribute("gakuseki_no").toString();
+	String simei_1 = request.getAttribute("simei_1").toString();
+	String simei_2 = request.getAttribute("simei_2").toString();
+	String kana_1 = request.getAttribute("kana_1").toString();
+	String kana_2 = request.getAttribute("kana_2").toString();
+	String umare = request.getAttribute("umare").toString(); 
+
 	String[] classList = {"AT11A192", "AT11B203", "CG11A172", "IT11A172", "AT12A165",
-	 "AT12B165", "IH12A101", "IW12A185", "AT13A223", "AP13A223", "IH13A223", "IW13A187",
-	 "CD13A166", "AP14A226", "AT14A226", "IH14A223", "CT14A187", "IW14A187", "xx14Axx"};
+		"AT12B165", "IH12A101", "IW12A185", "AT13A223", "AP13A223", "IH13A223", "IW13A187",
+		"CD13A166", "AP14A226", "AT14A226", "IH14A223", "CT14A187", "IW14A187", "xx14Axx"};
 %>
 
 <html>
