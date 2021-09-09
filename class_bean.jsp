@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" import="java.util.*" %> 
 <% response.setContentType("text/html;charset=UTF-8"); %>
+<% String select =	request.getAttribute("select").toString(); %>
 
 <html>
   <head>
@@ -20,7 +21,9 @@
 
       <div class='px-5 w-2/3 mx-auto'>
 
-        <div class='text-secondary text-lg py-3 bg-white'>検索結果 : </div>
+        <div class='text-secondary text-lg py-3 bg-white'>
+        検索結果 : <%= select %>
+        </div>
 
         <% if (gakuseki_bean.getHint_flag() == 1) { 
           ArrayList tbl = gakuseki_bean.getTbl();

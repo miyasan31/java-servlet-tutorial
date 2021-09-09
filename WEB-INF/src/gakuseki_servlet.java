@@ -23,8 +23,8 @@ public class gakuseki_servlet extends HttpServlet {
         	simei2_Str = req.getParameter("SIMEI_2");
           gakuseki_bean.setJyouken("simei_1 = '" + simei1_Str + "' and simei_2 = '" + simei2_Str + "'");
         } else {
-    	  class_noStr = req.getParameter("CLASS_NO");
-    	  syusseki_noStr = req.getParameter("SYUSSEKI_NO");
+          class_noStr = req.getParameter("CLASS_NO");
+          syusseki_noStr = req.getParameter("SYUSSEKI_NO");
           gakuseki_bean.setJyouken("class_no = '" + class_noStr + "' and syusseki_no = '" + syusseki_noStr + "'");
         }
 

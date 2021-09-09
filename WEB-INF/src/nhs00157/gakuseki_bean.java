@@ -34,11 +34,11 @@ public class gakuseki_bean implements Serializable {
       Statement stmt = con.createStatement();
       
       StringBuffer query = new StringBuffer();
-      query.append("select ");
+      query.append("SELECT ");
       query.append(field);
-      query.append(" from ");
+      query.append(" FROM ");
       query.append(table);
-      query.append(" where ");
+      query.append(" WHERE ");
       query.append(jyouken);
       query.append(" ");
       query.append(sort);
@@ -74,57 +74,14 @@ public class gakuseki_bean implements Serializable {
     }
   }
 
-  public void DBselect_1() {
-    try {
-      Class.forName(DRIVER);
-      con = DriverManager.getConnection(URL,USER,PASSWORD);
-      stmt = con.createStatement();
-      Statement stmt = con.createStatement();
-      
-      StringBuffer query = new StringBuffer();
-      query.append("select ");
-      query.append(field);
-      query.append(" from ");
-      query.append(table);
-      query.append(" order by class_no,syusseki_no");
-      ResultSet rs = stmt.executeQuery(query.toString());
-      ResultSetMetaData rsmd = rs.getMetaData();
-      System.out.println(query);
-
-      if (rs.next() == true) {
-        hint_flag = 1;
-        do{
-        	ArrayList row = new ArrayList();
-        	for(int i=1; i<= rsmd.getColumnCount(); i++){
-        		try{
-        			row.add(rs.getObject(i).toString());
-        		}
-        		catch(Exception ex){
-        			ex.printStackTrace();
-        		}
-        	}
-        	tbl.add(row);
-        }while(rs.next());
-      } else {
-        hint_flag = 0;
-      }
-      rs.close();
-      stmt.close();
-      con.close();
-    }
-    catch (SQLException ex) {
-      ex.printStackTrace();
-    } catch (Exception ex) {
-      ex.printStackTrace();
-    }
-  }
-
-
   public ArrayList getTbl(){
 	return tbl;  	
   }
   public void setJyouken(String inJyouken) {
     jyouken = inJyouken;
+  }
+  public void setSort(String inSort) {
+    sort = inSort;
   }
   public int getHint_flag() {
     return hint_flag;
