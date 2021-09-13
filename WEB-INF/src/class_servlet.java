@@ -25,7 +25,6 @@ public class class_servlet extends HttpServlet {
           req.setAttribute("select", selectStr + "年");
         } else {
           selectStr = req.getParameter("CLASS_NO");
-          gakuseki_bean.setSort("ORDER BY syusseki_no");
           gakuseki_bean.setJyouken("class_no = '" + selectStr + "'");
           gakuseki_bean.setSort("ORDER BY syusseki_no");
           gakuseki_bean.DBselect();
